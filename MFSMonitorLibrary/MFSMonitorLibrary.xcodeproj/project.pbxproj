@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6126C112AFCC3CB003A038B /* MFSMonitorLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = D6126C102AFCC3CB003A038B /* MFSMonitorLibrary.h */; };
+		D6126C132AFCC3CB003A038B /* MFSMonitorLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = D6126C122AFCC3CB003A038B /* MFSMonitorLibrary.m */; };
+		D6126C2E2AFCD7F6003A038B /* EventInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D6126C2C2AFCD7F6003A038B /* EventInfo.h */; };
+		D6126C3F2AFCE4B0003A038B /* EventInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6126C3E2AFCE4B0003A038B /* EventInfo.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6126C662AFCEC20003A038B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6126C622AFCEC20003A038B /* MFSMonitor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6126C4C2AFCEC19003A038B;
+			remoteInfo = MFSMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6126C0D2AFCC3CB003A038B /* libMFSMonitorLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMFSMonitorLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6126C102AFCC3CB003A038B /* MFSMonitorLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFSMonitorLibrary.h; sourceTree = "<group>"; };
+		D6126C122AFCC3CB003A038B /* MFSMonitorLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFSMonitorLibrary.m; sourceTree = "<group>"; };
+		D6126C2C2AFCD7F6003A038B /* EventInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfo.h; sourceTree = "<group>"; };
+		D6126C362AFCE130003A038B /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
+		D6126C3B2AFCE436003A038B /* libbsm.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbsm.tbd; path = usr/lib/libbsm.tbd; sourceTree = SDKROOT; };
+		D6126C3E2AFCE4B0003A038B /* EventInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EventInfo.mm; sourceTree = "<group>"; };
+		D6126C622AFCEC20003A038B /* MFSMonitor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MFSMonitor.xcodeproj; path = ../MFSMonitor/MFSMonitor.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6126C0B2AFCC3CB003A038B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6126C042AFCC3CB003A038B = {
+			isa = PBXGroup;
+			children = (
+				D6126C0F2AFCC3CB003A038B /* MFSMonitorLibrary */,
+				D6126C0E2AFCC3CB003A038B /* Products */,
+				D6126C352AFCE130003A038B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D6126C0E2AFCC3CB003A038B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6126C0D2AFCC3CB003A038B /* libMFSMonitorLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6126C0F2AFCC3CB003A038B /* MFSMonitorLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D6126C2C2AFCD7F6003A038B /* EventInfo.h */,
+				D6126C3E2AFCE4B0003A038B /* EventInfo.mm */,
+				D6126C102AFCC3CB003A038B /* MFSMonitorLibrary.h */,
+				D6126C122AFCC3CB003A038B /* MFSMonitorLibrary.m */,
+			);
+			path = MFSMonitorLibrary;
+			sourceTree = "<group>";
+		};
+		D6126C352AFCE130003A038B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6126C622AFCEC20003A038B /* MFSMonitor.xcodeproj */,
+				D6126C3B2AFCE436003A038B /* libbsm.tbd */,
+				D6126C362AFCE130003A038B /* libEndpointSecurity.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6126C632AFCEC20003A038B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6126C672AFCEC20003A038B /* MFSMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D6126C092AFCC3CB003A038B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6126C112AFCC3CB003A038B /* MFSMonitorLibrary.h in Headers */,
+				D6126C2E2AFCD7F6003A038B /* EventInfo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D6126C0C2AFCC3CB003A038B /* MFSMonitorLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6126C162AFCC3CB003A038B /* Build configuration list for PBXNativeTarget "MFSMonitorLibrary" */;
+			buildPhases = (
+				D6126C092AFCC3CB003A038B /* Headers */,
+				D6126C0A2AFCC3CB003A038B /* Sources */,
+				D6126C0B2AFCC3CB003A038B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MFSMonitorLibrary;
+			productName = MFSMonitorLibrary;
+			productReference = D6126C0D2AFCC3CB003A038B /* libMFSMonitorLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6126C052AFCC3CB003A038B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D6126C0C2AFCC3CB003A038B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D6126C082AFCC3CB003A038B /* Build configuration list for PBXProject "MFSMonitorLibrary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6126C042AFCC3CB003A038B;
+			productRefGroup = D6126C0E2AFCC3CB003A038B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D6126C632AFCEC20003A038B /* Products */;
+					ProjectRef = D6126C622AFCEC20003A038B /* MFSMonitor.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D6126C0C2AFCC3CB003A038B /* MFSMonitorLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D6126C672AFCEC20003A038B /* MFSMonitor.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MFSMonitor.app;
+			remoteRef = D6126C662AFCEC20003A038B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6126C0A2AFCC3CB003A038B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6126C132AFCC3CB003A038B /* MFSMonitorLibrary.m in Sources */,
+				D6126C3F2AFCE4B0003A038B /* EventInfo.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D6126C142AFCC3CB003A038B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D6126C152AFCC3CB003A038B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D6126C172AFCC3CB003A038B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D6126C182AFCC3CB003A038B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6126C082AFCC3CB003A038B /* Build configuration list for PBXProject "MFSMonitorLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6126C142AFCC3CB003A038B /* Debug */,
+				D6126C152AFCC3CB003A038B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6126C162AFCC3CB003A038B /* Build configuration list for PBXNativeTarget "MFSMonitorLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6126C172AFCC3CB003A038B /* Debug */,
+				D6126C182AFCC3CB003A038B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6126C052AFCC3CB003A038B /* Project object */;
+}

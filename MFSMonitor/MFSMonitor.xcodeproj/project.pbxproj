@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6126C512AFCEC19003A038B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6126C502AFCEC19003A038B /* AppDelegate.m */; };
+		D6126C542AFCEC19003A038B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6126C532AFCEC19003A038B /* ViewController.m */; };
+		D6126C562AFCEC1A003A038B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6126C552AFCEC1A003A038B /* Assets.xcassets */; };
+		D6126C592AFCEC1A003A038B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6126C572AFCEC1A003A038B /* Main.storyboard */; };
+		D6126C5B2AFCEC1A003A038B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6126C5A2AFCEC1A003A038B /* main.m */; };
+		D6126C6B2AFCEC6C003A038B /* libMFSMonitorLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6126C6A2AFCEC6C003A038B /* libMFSMonitorLibrary.a */; };
+		D6126C6F2AFCECE3003A038B /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6126C6E2AFCECE3003A038B /* libEndpointSecurity.tbd */; };
+		D6126C712AFCECF0003A038B /* libbsm.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6126C702AFCECF0003A038B /* libbsm.tbd */; };
+		D64904392B02262500A61869 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D64904382B02262500A61869 /* DataManager.m */; };
+		D6799AC32B142FD100960F42 /* FilterRuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6799AC22B142FD100960F42 /* FilterRuleView.m */; };
+		D68C5D832AFE040000F0D78B /* EventFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D68C5D822AFE040000F0D78B /* EventFilter.m */; };
+		D68E712F2B034EFA00DBDF66 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68C5D882AFE232900F0D78B /* Masonry.framework */; };
+		D68E71302B034F0600DBDF66 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D68C5D882AFE232900F0D78B /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D68E71362B0358A000DBDF66 /* EventCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = D68E71342B0358A000DBDF66 /* EventCellView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D68C5D8D2AFE234C00F0D78B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D68E71302B034F0600DBDF66 /* Masonry.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D6126C4C2AFCEC19003A038B /* MFSMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFSMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6126C4F2AFCEC19003A038B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6126C502AFCEC19003A038B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6126C522AFCEC19003A038B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D6126C532AFCEC19003A038B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D6126C552AFCEC1A003A038B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6126C582AFCEC1A003A038B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6126C5A2AFCEC1A003A038B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6126C5C2AFCEC1A003A038B /* MFSMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MFSMonitor.entitlements; sourceTree = "<group>"; };
+		D6126C6A2AFCEC6C003A038B /* libMFSMonitorLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMFSMonitorLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6126C6C2AFCEC81003A038B /* MFSMonitorLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MFSMonitorLibrary.h; path = ../../MFSMonitorLibrary/MFSMonitorLibrary/MFSMonitorLibrary.h; sourceTree = "<group>"; };
+		D6126C6E2AFCECE3003A038B /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
+		D6126C702AFCECF0003A038B /* libbsm.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbsm.tbd; path = usr/lib/libbsm.tbd; sourceTree = SDKROOT; };
+		D6126C722AFCED5F003A038B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D64904372B02262500A61869 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		D64904382B02262500A61869 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		D6799AC12B142FD100960F42 /* FilterRuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterRuleView.h; sourceTree = "<group>"; };
+		D6799AC22B142FD100960F42 /* FilterRuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterRuleView.m; sourceTree = "<group>"; };
+		D68C5D812AFE040000F0D78B /* EventFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventFilter.h; sourceTree = "<group>"; };
+		D68C5D822AFE040000F0D78B /* EventFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventFilter.m; sourceTree = "<group>"; };
+		D68C5D882AFE232900F0D78B /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = MFSMonitor/FrameWork/Masonry.framework; sourceTree = "<group>"; };
+		D68E71342B0358A000DBDF66 /* EventCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCellView.m; sourceTree = "<group>"; };
+		D68E71352B0358A000DBDF66 /* EventCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCellView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6126C492AFCEC19003A038B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68E712F2B034EFA00DBDF66 /* Masonry.framework in Frameworks */,
+				D6126C712AFCECF0003A038B /* libbsm.tbd in Frameworks */,
+				D6126C6F2AFCECE3003A038B /* libEndpointSecurity.tbd in Frameworks */,
+				D6126C6B2AFCEC6C003A038B /* libMFSMonitorLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6126C432AFCEC19003A038B = {
+			isa = PBXGroup;
+			children = (
+				D6126C4E2AFCEC19003A038B /* MFSMonitor */,
+				D6126C4D2AFCEC19003A038B /* Products */,
+				D6126C692AFCEC6C003A038B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D6126C4D2AFCEC19003A038B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6126C4C2AFCEC19003A038B /* MFSMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6126C4E2AFCEC19003A038B /* MFSMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				D6126C6C2AFCEC81003A038B /* MFSMonitorLibrary.h */,
+				D6126C4F2AFCEC19003A038B /* AppDelegate.h */,
+				D6126C502AFCEC19003A038B /* AppDelegate.m */,
+				D68C5D812AFE040000F0D78B /* EventFilter.h */,
+				D68C5D822AFE040000F0D78B /* EventFilter.m */,
+				D64904372B02262500A61869 /* DataManager.h */,
+				D64904382B02262500A61869 /* DataManager.m */,
+				D6126C522AFCEC19003A038B /* ViewController.h */,
+				D6126C532AFCEC19003A038B /* ViewController.m */,
+				D68E71352B0358A000DBDF66 /* EventCellView.h */,
+				D68E71342B0358A000DBDF66 /* EventCellView.m */,
+				D6799AC12B142FD100960F42 /* FilterRuleView.h */,
+				D6799AC22B142FD100960F42 /* FilterRuleView.m */,
+				D6126C552AFCEC1A003A038B /* Assets.xcassets */,
+				D6126C572AFCEC1A003A038B /* Main.storyboard */,
+				D6126C5A2AFCEC1A003A038B /* main.m */,
+				D6126C5C2AFCEC1A003A038B /* MFSMonitor.entitlements */,
+			);
+			path = MFSMonitor;
+			sourceTree = "<group>";
+		};
+		D6126C692AFCEC6C003A038B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D68C5D882AFE232900F0D78B /* Masonry.framework */,
+				D6126C722AFCED5F003A038B /* Foundation.framework */,
+				D6126C702AFCECF0003A038B /* libbsm.tbd */,
+				D6126C6E2AFCECE3003A038B /* libEndpointSecurity.tbd */,
+				D6126C6A2AFCEC6C003A038B /* libMFSMonitorLibrary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6126C4B2AFCEC19003A038B /* MFSMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6126C5F2AFCEC1A003A038B /* Build configuration list for PBXNativeTarget "MFSMonitor" */;
+			buildPhases = (
+				D6126C482AFCEC19003A038B /* Sources */,
+				D6126C492AFCEC19003A038B /* Frameworks */,
+				D6126C4A2AFCEC19003A038B /* Resources */,
+				D68C5D8D2AFE234C00F0D78B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MFSMonitor;
+			productName = MFSMonitor;
+			productReference = D6126C4C2AFCEC19003A038B /* MFSMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6126C442AFCEC19003A038B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D6126C4B2AFCEC19003A038B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D6126C472AFCEC19003A038B /* Build configuration list for PBXProject "MFSMonitor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6126C432AFCEC19003A038B;
+			productRefGroup = D6126C4D2AFCEC19003A038B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6126C4B2AFCEC19003A038B /* MFSMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6126C4A2AFCEC19003A038B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6126C562AFCEC1A003A038B /* Assets.xcassets in Resources */,
+				D6126C592AFCEC1A003A038B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6126C482AFCEC19003A038B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68C5D832AFE040000F0D78B /* EventFilter.m in Sources */,
+				D68E71362B0358A000DBDF66 /* EventCellView.m in Sources */,
+				D64904392B02262500A61869 /* DataManager.m in Sources */,
+				D6799AC32B142FD100960F42 /* FilterRuleView.m in Sources */,
+				D6126C542AFCEC19003A038B /* ViewController.m in Sources */,
+				D6126C5B2AFCEC1A003A038B /* main.m in Sources */,
+				D6126C512AFCEC19003A038B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6126C572AFCEC1A003A038B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6126C582AFCEC1A003A038B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6126C5D2AFCEC1A003A038B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lc++";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D6126C5E2AFCEC1A003A038B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-lc++";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D6126C602AFCEC1A003A038B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MFSMonitor/MFSMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MFSMonitor/FrameWork",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MFSMonitor/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuyi12138.MFSMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		D6126C612AFCEC1A003A038B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MFSMonitor/MFSMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MFSMonitor/FrameWork",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MFSMonitor/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuyi12138.MFSMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6126C472AFCEC19003A038B /* Build configuration list for PBXProject "MFSMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6126C5D2AFCEC1A003A038B /* Debug */,
+				D6126C5E2AFCEC1A003A038B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6126C5F2AFCEC1A003A038B /* Build configuration list for PBXNativeTarget "MFSMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6126C602AFCEC1A003A038B /* Debug */,
+				D6126C612AFCEC1A003A038B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6126C442AFCEC19003A038B /* Project object */;
+}
